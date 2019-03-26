@@ -12,7 +12,7 @@ import { fetchPosts2 } from '../actions/postActions'
 
 
 class Posts extends Component {
-  componentWillMount() {
+  componentDidMount() {
     console.log('will Mount')
     this.props.fetchPosts();
     this.props.fetchPosts2();
